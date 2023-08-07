@@ -1,0 +1,19 @@
+.related {
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 8px 0px;
+  }
+  .relatedMovies {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    img {
+      max-width: 310px;
+      height: 175px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+}

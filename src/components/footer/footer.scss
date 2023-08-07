@@ -1,0 +1,37 @@
+footer {
+  background-color: black;
+  padding: 100px 75px;
+  .container {
+    color: rgb(148, 148, 148);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    span {
+      font-size: 18px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .footerLinks {
+      display: flex;
+      align-items: center;
+      .footerItem {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+    select {
+      width: fit-content;
+      padding: 10px 20px;
+      border: 1px solid lightgray;
+      color: rgb(204, 204, 204);
+      background-color: var(--main-color);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding: 0px 50px;
+
+  .listTitle {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+
+    .sliderArrow {
+      height: 100%;
+      padding: 0px 25px;
+      z-index: 2;
+      cursor: pointer;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      color: white;
+
+      position: absolute;
+      &.left {
+        left: 0px;
+        background: linear-gradient(
+          to left,
+          rgba(255, 255, 255, 0),
+          rgba(0, 0, 0, 0.9)
+        );
+      }
+      &.right {
+        right: 0px;
+        background: linear-gradient(
+          to left,
+          rgba(0, 0, 0, 0.5),
+          rgba(255, 255, 255, 0)
+        );
+      }
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: max-content;
+      transform: translateX(0px);
+      transition: all 0.15s ease;
+    }
+  }
+}

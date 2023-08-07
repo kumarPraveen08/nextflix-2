@@ -1,0 +1,17 @@
+.episodes {
+  margin-top: 20px;
+
+  span {
+  }
+  p {
+    width: 48%;
+    color: #a5a5a5;
+    font-size: 16px;
+    margin: 8px 0px 20px 0px;
+  }
+  .episodeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

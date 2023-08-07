@@ -1,0 +1,21 @@
+.listItem {
+  min-width: 300px;
+  background-color: var(--main-color);
+  cursor: pointer;
+  color: white;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    img {
+      width: 300px;
+      object-fit: cover;
+    }
+    span {
+      font-size: 16px;
+      color: white;
+      align-self: center;
+    }
+  }
+}

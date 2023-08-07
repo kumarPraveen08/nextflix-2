@@ -1,0 +1,11 @@
+.movie {
+  background-color: var(--main-color);
+  color: white;
+  .movieDetails {
+    padding: 100px 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+  }
+}

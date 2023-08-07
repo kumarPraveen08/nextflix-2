@@ -1,0 +1,197 @@
+.home {
+  background-color: black;
+  .wrapper {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+      url("https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/fdf508c8-97d0-42fd-a6f9-9bef6bf96934/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+        center;
+    height: 700px;
+    border-bottom: 10px solid #2d2d2d;
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 365px;
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0px;
+
+        .left {
+          img {
+            height: 40px;
+            width: auto;
+            cursor: pointer;
+          }
+        }
+        .right {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .lang {
+            padding: 6px 15px;
+            background-color: var(--main-color);
+            font-size: 18px;
+            border-radius: 4px;
+            color: white;
+          }
+          button {
+            padding: 10px 20px;
+            border-radius: 4px;
+            background-color: red;
+            color: white;
+            border: none;
+          }
+        }
+      }
+      .topbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        margin-top: 150px;
+        h2 {
+          font-size: 56px;
+          font-weight: 800;
+          margin: 10px 0px;
+        }
+        span {
+          font-size: 24px;
+        }
+        .signup {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          input {
+            padding: 18px;
+            width: 400px;
+            font-size: 18px;
+            border-radius: 4px;
+            background-color: transparent;
+            &::placeholder {
+              color: lightgray;
+            }
+          }
+          button {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            gap: 10px;
+            padding: 15px 20px;
+            background-color: red;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  section {
+    padding: 72px 0px;
+    border-bottom: 10px solid #2d2d2d;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 365px;
+      color: white;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+          font-size: 56px;
+          font-weight: 800;
+          margin: 10px 0px;
+        }
+        span {
+          font-size: 24px;
+        }
+      }
+      .right {
+        img {
+          width: 580px;
+        }
+      }
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  section.faqs {
+    padding: 70px 365px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+      font-size: 56px;
+      font-weight: 800;
+      margin: 10px 0px;
+      text-align: center;
+    }
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .accordion__button {
+        font-size: 24px;
+        color: lightgray;
+        background-color: #2d2d2d;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .accordion__button:before {
+        display: none;
+      }
+      .accordion__panel {
+        font-size: 24px;
+        color: lightgray;
+      }
+    }
+    .action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      span {
+        font-size: 20px;
+      }
+      .signup {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        input {
+          padding: 18px;
+          width: 350px;
+          font-size: 18px;
+          border-radius: 3px;
+          background-color: rgba(34, 34, 34, 0.3);
+          &::placeholder {
+            color: lightgray;
+          }
+        }
+        button {
+          display: flex;
+          align-items: center;
+          font-size: 24px;
+          color: white;
+          gap: 10px;
+          padding: 15px 20px;
+          background-color: red;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 0px 265px;
+  }
+}
